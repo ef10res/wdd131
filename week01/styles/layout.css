@@ -20,7 +20,7 @@ header {
     padding: 2rem;
 }
 
-main {
+div {
     grid-column: 1/2;
     background-color: gray;
     height: 300px
