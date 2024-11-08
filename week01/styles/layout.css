@@ -20,7 +20,7 @@ header {
     padding: 2rem;
 }
 
-div {
+main {
     grid-column: 1/2;
     background-color: gray;
     height: 300px
@@ -39,7 +39,7 @@ footer {
     text-align: center;
 }
 
-li{
+a {
     display: block;
     flex: 1 1 auto;
     text-align: center;
