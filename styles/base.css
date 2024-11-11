@@ -20,3 +20,7 @@ nav a:hover {
     display: block;
     border: white;
 }
+
+nav a {
+    flex: 1 1 100%;
+}
