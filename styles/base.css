@@ -5,6 +5,12 @@ body {
     grid-template: auto 1fr 1fr/ 1fr auto
 }
 
+main {
+    max-width: 900px;
+    margin: auto;
+    display: grid
+}
+
 h1 {
     font-weight: 100;
     text-align:center;
@@ -28,8 +34,8 @@ nav {
 }
 
 nav a:hover {
-    display: block;
     border: white;
+    text-decoration:overline;
 }
 
 nav a {
