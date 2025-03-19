@@ -4,6 +4,10 @@ body {
     grid-template: 1fr auto 1fr / 2fr 1fr;
 }
 
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
 nav {
     list-style: none;
     display: flex;
