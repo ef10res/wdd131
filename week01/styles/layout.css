@@ -23,13 +23,13 @@ header {
 div {
     grid-column: 1/2;
     background-color: gray;
-    height: 300px
+    height: 300px;
 }
 
 aside {
     grid-column: 2/3;
     background-color: white;
-    height: 300px
+    height: 300px;
 }
 
 footer {
