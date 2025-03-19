@@ -1,0 +1,49 @@
+body {
+    display: grid;
+    height: 100px;
+    grid-template: auto 1fr 1fr/ 1fr auto
+}
+
+nav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: black;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+header {
+    background: darkgray;
+    grid-column: 1/3;
+    padding: 2rem;
+}
+
+div {
+    grid-column: 1/2;
+    background-color: gray;
+    height: 300px
+}
+
+aside {
+    grid-column: 2/3;
+    background-color: white;
+
+}
+
+footer {
+    grid-column: 1/3;
+    background-color: darkgray;
+    padding: 2rem;
+    text-align: center;
+}
+
+a {
+    display: block;
+    flex: 1 1 auto;
+    text-align: center;
+    color: #eee;
+    padding: 0.75rem;
+    text-decoration: none;
+}
