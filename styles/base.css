@@ -49,3 +49,19 @@ footer {
     background-color: blue;
     height: 100px;
 }
+
+#aboutme {
+    border-radius: 25px;
+    border: 2px solid #2c420e;
+    padding: 20px;
+    width: 600px;
+    height: 650px;
+}
+
+#webdev {
+    border-radius: 25px;
+    border: 2px solid #334618;
+    padding: 20px;
+    width: 300px;
+    height: 650px;
+}
