@@ -41,6 +41,12 @@ nav a:hover {
 
 nav a {
     flex: 1 1 100%;
+    font-family: "arial";
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
 }
 
 footer {
