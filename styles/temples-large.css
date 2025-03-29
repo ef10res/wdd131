@@ -7,10 +7,6 @@
         grid-template-rows: 1fr;
     }
 
-    body {
-        font-family: 'Roboto', sans-serif;
-    }
-
     nav {
         grid-column: 2/3;
         display: flex;
@@ -28,11 +24,6 @@
 
     nav a:hover {
         color: yellow;
-    }
-
-    main {
-        max-width: 800px;
-        margin: 0 auto;
     }
 
     .container {
