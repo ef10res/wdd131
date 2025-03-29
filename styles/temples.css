@@ -1,54 +1,60 @@
-@media screen and (max-width: 639px) {
-    nav.show {
-        background-color: blueviolet;
-        color: white;
-        padding: 10px;
-        justify-content: center;
-        align-items: center;
-    }
 
-    #menu {
-        display: block;
-        font-size: 2rem;
-        font-weight: 700;
-        text-decoration: none;
-        padding: .5rem .75rem;
-    }
+nav.show {
+    background-color: blueviolet;
+    color: white;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
 
-    #menu::before {
-        content: "☰";
-    }
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+}
 
-    #menu.show::before {
-        content: "X";
-    }
+#menu::before {
+    content: "☰";
+}
 
-    body {
-        font-family: 'Roboto', sans-serif;
-    }
+#menu.show::before {
+    content: "X";
+}
 
-    main h2 {
-        text-align: center;
-    }
+body {
+    font-family: 'Roboto', sans-serif;
+}
 
-    main {
-        margin: 0 auto;
-    }
+main h2 {
+    text-align: center;
+}
 
-    nav {
-        list-style-type: none;
-        display: flex;
-        flex-direction: column;
-    }
+main {
+    margin: 0 auto;
+}
 
-    nav a {
-        display: block;
-        padding: 1rem;
-        text-align: center;
-        color: white;
-    }
+nav {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
 
-    nav a:hover {
-        border: 1px solid white;
-    }
+nav a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+}
+
+nav a:hover {
+    border: 1px solid white;
+}
+
+footer {
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
