@@ -1,0 +1,20 @@
+header, footer {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin: 0px;
+    font-family: Helvetica;
+}
+
+h2, ul{
+    text-align: center;
+    font-family: Arial;
+    list-style-type: none;
+}
+
+
+span {
+    font: weight 500px;
+}
+

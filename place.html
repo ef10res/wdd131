@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place</title>
+    <meta name="author" content="Erick Flores">
+    <meta name="description" content="WDD 131 Week 03 Place">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<main>
+    <header>
+        <h1>
+            Madagascar
+        </h1>
+    </header>
+    <main>
+        <picture>
+            <source media="(max-width: 599px)" srcset="images/madagascar-small.webp">
+            <source media="(min-width: 600px)" srcset="images/madagascar-large.webp">
+            <img class="show" src="images/madagascar-small.webp" width="400" height="425" alt="madagascar lemur">
+        </picture>
+        <div>
+            <section class="data">
+                <h2>Data</h2>
+                <ul>
+                    <li>
+                        <span>Area:</span> 587,041 sq km
+                    </li>
+                    <li>
+                        <span>Population:</span> 27,691,018
+                    </li>
+                    <li>
+                        <span>Capital:</span> Antananarivo
+                    </li>
+                    <li>
+                        <span>Languages:</span> Malagasy,French
+                    </li>
+                    <li>
+                        <span>Currency:</span> Malagasy Ariary
+                    </li>
+                    <li>
+                        <span>Time Zone:</span> UTC+3
+                    </li>
+                    <li>
+                        <span>Calling Code:</span> +261
+                    </li>
+                    <li>
+                        <span>Internet TLD:</span> .mg
+                    </li>
+                </ul>
+            </section>
+            <section class="weather">
+                <h2>
+                    Weather <span class="icon"></>
+                </h2>
+                <img class="show" src="images/weather.svg" alt="weather logo">
+                <ul>
+                    <li>
+                        <span>Temperature:</span> 30 F
+                    </li>
+                    <li>
+                        <span>Conditions:</span> Partly Cloudy
+                    </li>
+                    <li>
+                        <span>Wind:</span> 10 m/h
+                    </li>
+                    <li>
+                        <p id="chill"><span>Wind Chill:</span>  </p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>
+            ©️2025 🐒 Erick Moroni Flores 🐒<br>
+            Madagascar
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
