@@ -1,6 +1,6 @@
 :root {
-    font-family: 'Montserrat';
-    margin: auto;
+    --text: 'Montserrat';
+    --margin: auto;
 }
 
 header, footer {
@@ -8,8 +8,8 @@ header, footer {
     color: white;
     text-align: center;
     padding: 15px;
-    margin: 0px;
-    
+    margin: var(--margin);
+    font-family: var(--text);
 }
 
 h2, ul{
