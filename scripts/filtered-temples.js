@@ -141,7 +141,7 @@ oldLink.addEventListener("click", () => {
 });
 
 newLink.addEventListener("click", () => {
-    createTempleCard(temples.filter(temple => (temple.dedicated.substring(0,4) > 2000)));
+    createTempleCard(temples.filter(temple => (temple.dedicated.substring(0, 4) > 2000)));
 
 });
 
