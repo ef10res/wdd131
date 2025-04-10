@@ -14,11 +14,11 @@ h2 {
     margin-right: 85%;
 }
 
-footer {
+footer > div {
     background-color: blue;
     color: Yellow;
     text-align: center;
-    padding: 10px;
+    padding: 30px;
 }
 
 figcaption {
