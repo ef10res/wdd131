@@ -73,31 +73,32 @@ const temples = [
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
     {
-        templeName: "Austin Texas",
-        location: "Austin, Texas",
-        dedicated: "2024, August, 17",
-        area: 30000,
-        imageUrl:"https://churchofjesuschristtemples.org/austin-texas-temple/"
+        templeName: "Rome Italy",
+        location: "Rome, Italy",
+        dedicated: "2019, March, 10",
+        area: 41010,
+        imageUrl:"https://content.churchofjesuschrist.org/acp/bc/cp/Europe/Albania/2020/Area%20Leadership%20Mesage/400x250/rome-italy-temple-2160340-wallpaper.jpg"
     },
     {
         templeName: "Madrid Spain",
         location: "Madrid, Spain",
         dedicated: "1999, March, 19",
         area: 45800,
-        imageUrl:"https://churchofjesuschristtemples.org/madrid-spain-temple/"
+        imageUrl:"https://content.churchofjesuschrist.org/acp/bc/cp/Europe/United%20Kingdom/messages/400x250/madrid-spain-temple-612x340.jpg"
     },
     {
         templeName: "Ogden Utah",
         location: "Ogden, Utah",
         dedicated: "2014, September, 21",
         area: 112232,
-        imageUrl: "https://churchofjesuschristtemples.org/ogden-utah-temple/"
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/ogden-utah/400x250/ogden-utah-temple-1300442-wallpaper.jpg"
     }
 ];
 
-createTempleCard();
+createTempleCard(temples);
 
-function createTempleCard() {
+function createTempleCard(temples) {
+    document.querySelector(".container").innerHTML = "";
     temples.forEach(temple => {
         let card = document.createElement("section");
     let name = document.createElement("h3");
@@ -121,5 +122,35 @@ function createTempleCard() {
     card.appendChild(img);
 
     document.querySelector(".container").append(card);
-})
+    })
+
 }
+const homeLink = document.querySelector("#home");
+const newLink = document.querySelector("#new");
+const oldLink = document.querySelector("#old");
+const largeLink = document.querySelector("#large");
+const smallLink = document.querySelector("#small");
+
+homeLink.addEventListener("click", () => {
+    createTempleCard(temples);
+});
+
+oldLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => (temples['dedicated'][0] < 2000)));
+
+});
+
+newLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => (temples['dedicated'][0] > 2000)));
+
+});
+
+smallLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => (parseInt(temple.area) < 10000)));
+
+});
+
+largeLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => (parseInt(temple.area) > 90000)));
+
+});
