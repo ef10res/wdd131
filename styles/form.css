@@ -1,0 +1,39 @@
+header, footer {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: blueviolet;
+    color: aqua;
+    text-align: Center;
+    padding: 10px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+div {
+    margin: 1rem 0 0 0;
+    padding: .5rem 2%;
+}
+
+label {
+    display: block;
+}
+
+input[type='text'] {
+    display: block;
+}
+
+input[type="submit"],
+input[type="text"],
+input[type="date"],
+select {
+    margin: 10px 10px;
+    width: 400px;
+    height: 40px;
+}
+
+textarea {
+    width: 400px;
+    height: 80px;
+    margin: 10px 10px;
+}

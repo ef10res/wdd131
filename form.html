@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="author" content="Erick Flores WDD131">
+    <meta name="description" content="Product Review Form">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <div>Product Name</div>
+            <select id="product" name="product" required>
+                <option value="" disabled selected>Select a Product...</option>
+            </select>
+            <div>Overall Rating</div>
+                <label><input type="radio" id="1star" name="rating" value="1" required>&star;</label>
+                <label><input type="radio" id="2star" name="rating" value="2" required>&star; &star;</label>
+                <label><input type="radio" id="3star" name="rating" value="3" required>&star; &star; &star;</label>
+                <label><input type="radio" id="4star" name="rating" value="4" required>&star; &star; &star; &star;</label>
+                <label><input type="radio" id="5star" name="rating" value="5" required>&star; &star; &star; &star; &star;</label>
+            <div>Date of Installation</div>
+                <input type="date" id="date" name="date" required>
+            <div>Useful Features (Check all that apply)</div>
+                <label>Durability<input type="checkbox" id="check" name="Durability" value="Durability"></label>
+                <label>Ease of Use<input type="checkbox" id="check" name="Ease of Use" value="Ease of Use"></label>
+                <label>Performance<input type="checkbox" id="check" name="Performance" value="Performance"></label>
+                <label>Design<input type="checkbox" id="check" name="Design" value="Design"></label>
+            <div>Writen Review (optional)</div>
+                <textarea id="review" name="review"></textarea>
+            <div>Your Name (optional)</div>    
+                <input type="text" id="name" name="name">
+            <input type="submit" value="Review my Product">
+        </form>
+    </main>
+    <footer>
+        <div>&copy; 🌎 Erick Flores 🌏 <br>
+            Product Review</div>
+        <div id="lastModified"></div>
+    </footer>
+</body>
+</html>
